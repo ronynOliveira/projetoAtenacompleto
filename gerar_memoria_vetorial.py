@@ -59,7 +59,7 @@ import chromadb
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 import pinecone
-from app.atena_config import AtenaConfig
+from atena_config import AtenaConfig
 from typing_extensions import Annotated
 from prometheus_client import Counter, Histogram, Gauge, start_http_server
 

@@ -8,15 +8,16 @@ import numpy as np
 import json
 
 # --- Importação dos Módulos Principais da Atena ---
-from app.atena_etica import AtenaEthicalFramework, ActionContext
-from app.atena_integridade_cognitiva import ProtocoloDeIntegridadeCognitiva
-from app.atena_inteligencia import AtenaCognitiveArchitecture
-from app.atena_rpa_engine import EnhancedAtenaRPAAgent as AtenaRPAAgent, ConfigManager as RPAConfigManager
-from app.auto_gerador_codigos_V2 import AutoCodeConstructorFacade, ProblemContext
-from app.atena_web import AtenaWebSearchEngine
-from app.atena_config import AtenaConfig
-from app.atena_langchain_core import AtenaLangChainManager # NOVO: Importa o manager do LangChain
-from app.atena_user_model import UserBehaviorTracker
+from atena_etica import AtenaEthicalFramework, ActionContext
+from atena_integridade_cognitiva import ProtocoloDeIntegridadeCognitiva
+from atena_inteligencia import AtenaCognitiveArchitecture
+from atena_rpa_engine import EnhancedAtenaRPAAgent as AtenaRPAAgent, ConfigManager as RPAConfigManager
+from auto_gerador_codigos_V2 import AutoCodeConstructorFacade, ProblemContext
+from atena_web import AtenaWebSearchEngine
+from atena_config import AtenaConfig
+from atena_langchain_core import AtenaLangChainManager
+from atena_user_model import UserBehaviorTracker
+from atena_motor_voz import AtenaVoiceMotor # Adicionado para integração de voz
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - [%(levelname)s] - %(name)s: %(message)s")
@@ -57,6 +58,10 @@ class AtenaIntegratedCognitiveSystem:
         # --- Modelo de Usuário ---
         self.user_model = UserBehaviorTracker()
         logger.info("Modelo de Comportamento do Usuário instanciado.")
+
+        # --- Motor de Voz (STT/Correção) ---
+        self.voice_motor = AtenaVoiceMotor()
+        logger.info("Motor de Voz (STT/Correção) instanciado.")
 
     @property
     def langchain_manager(self) -> AtenaLangChainManager:
@@ -246,4 +251,6 @@ class AtenaIntegratedCognitiveSystem:
             self.rpa_agent.cleanup()
         if hasattr(self.web_search_engine, 'close'):
             await self.web_search_engine.close()
+        if hasattr(self, 'voice_motor'):
+            self.voice_motor.shutdown()
 

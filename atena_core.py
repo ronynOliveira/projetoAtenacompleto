@@ -12,7 +12,7 @@ from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from enum import Enum
 
-from app.atena_config import AtenaConfig, settings
+from atena_config import AtenaConfig, settings
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - [%(module)s:%(funcName)s:%(lineno)d] - %(message)s')

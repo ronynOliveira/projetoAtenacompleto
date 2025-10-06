@@ -31,7 +31,7 @@ import asyncpg
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import text
-from app.atena_config import AtenaConfig
+from atena_config import AtenaConfig
 from pydantic import Field, HttpUrl, PostgresDsn, RedisDsn
 from pydantic_settings import BaseSettings
 

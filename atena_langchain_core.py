@@ -12,9 +12,9 @@ from langchain.chains import RetrievalQA
 # from langchain_community.vectorstores import Chroma # Exemplo de VectorStore
 
 # Importações para as ferramentas
-from app.atena_web import AtenaWebSearchEngine, SearchResult
-from app.atena_rpa_engine import EnhancedAtenaRPAAgent, ConfigManager as RPAConfigManager, ExecutionContext
-from app.atena_config import AtenaConfig # Importar AtenaConfig aqui para evitar circular dependency
+from atena_web import AtenaWebSearchEngine, SearchResult
+from atena_rpa_engine import EnhancedAtenaRPAAgent, ConfigManager as RPAConfigManager, ExecutionContext
+from atena_config import AtenaConfig # Importar AtenaConfig aqui para evitar circular dependency
 
 logger = logging.getLogger(__name__)
 

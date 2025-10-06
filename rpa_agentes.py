@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 from typing import Dict, Any, Optional
 
 # --- Imports do nosso Ecossistema ---
-from app.advanced_rpa_core import AdvancedAIExecutorFramework, IntelligentBrowserManager
+from advanced_rpa_core import AdvancedAIExecutorFramework, IntelligentBrowserManager
 
 # Logger para este módulo
 logger = logging.getLogger(__name__)

@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 import asyncio
-from app.atena_web_search_engine import AtenaWebSearchEngine, SearchResult
+from atena_web_search_engine import AtenaWebSearchEngine, SearchResult
 
 # Modelos Pydantic para API
 class SearchRequest(BaseModel):

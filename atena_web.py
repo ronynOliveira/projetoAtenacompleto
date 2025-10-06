@@ -10,7 +10,7 @@ import asyncio
 import aiohttp
 import requests
 from bs4 import BeautifulSoup
-from app.atena_config import AtenaConfig
+from atena_config import AtenaConfig
 from typing import List, Dict, Optional, Any, Union
 import json
 import time
