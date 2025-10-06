@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 if __name__ == "__main__":
     logger.info("Iniciando servidor da Atena através do lançador 'run_server.py'...")
     uvicorn.run(
-        "app.main:app",
+        "main:app",
         host="0.0.0.0",
         port=8000,
         reload=True

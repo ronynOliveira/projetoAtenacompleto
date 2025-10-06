@@ -1,7 +1,7 @@
 from typing import Protocol, Dict, Any, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from app.agent import ExecutionContext
+    from agent import ExecutionContext
 
 class BrowserAdapterProtocol(Protocol):
     """Protocol para adaptadores de navegador."""

@@ -4,7 +4,7 @@ import asyncio
 from typing import Dict, Any, List, Optional, Callable
 from dataclasses import dataclass
 from enum import Enum
-from app.protocols import BrowserAdapterProtocol
+from protocols import BrowserAdapterProtocol
 from intelligence import AtenaIntelligenceClient
 
 logger = logging.getLogger(__name__)

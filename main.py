@@ -18,11 +18,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 # --- Módulo Orquestrador Principal da Atena ---
-from app.atena_integrated_cognitive_system import AtenaIntegratedCognitiveSystem
-from app.atena_config import AtenaConfig
-from app.feedback_api import router as feedback_router
-from app.atena_web_fasAPI import search_router
-from app.atena_psique import router as psique_router
+from atena_integrated_cognitive_system import AtenaIntegratedCognitiveSystem
+from atena_config import AtenaConfig
+from atena_web_fasAPI import search_router
+from atena_psique import router as psique_router
+from voice_api import router as voice_router # API de Voz
 
 # --- Configuração de Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - [%(name)s] - [%(levelname)s] - %(message)s')
@@ -74,9 +74,9 @@ async def lifespan(app: FastAPI):
 # --- Inicialização da Aplicação FastAPI ---
 app = FastAPI(title="Servidor do Ecossistema Atena", version="5.2.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
-app.include_router(feedback_router, prefix="/api")
 app.include_router(search_router, prefix="/api")
 app.include_router(psique_router, prefix="/api")
+app.include_router(voice_router, prefix="/api", tags=["Voz"]) # Roteador da API de Voz
 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
@@ -266,18 +266,19 @@ async def log_user_interaction(interaction_data: dict):
         logger.error(f"Erro ao registrar interação: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Erro ao registrar interação: {e}")
 
-# --- Rotas de Frontend ---
+# --- Rotas de Frontend (Comentadas para focar no backend) ---
+# O código abaixo foi comentado pois a estrutura de frontend não existe neste projeto.
 # Define o caminho para a pasta do frontend (um nível acima de 'backend')
-FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend"
+# FRONTEND_DIR = Path(__file__).parent.parent.parent / "frontend"
 
 # Monta a pasta do frontend como um diretório estático
-app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+# app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
 
-@app.get("/", response_class=HTMLResponse, include_in_schema=False)
-async def read_root(request: Request):
-    """Serve o painel principal da Atena."""
-    painel_path = FRONTEND_DIR / "painel_bolhas.html"
-    if not painel_path.exists():
-        return HTMLResponse(content=f"<h1>Erro 500: Arquivo do Painel não encontrado.</h1><p>Caminho procurado: {painel_path}</p>", status_code=500)
-    return FileResponse(painel_path)
+# @app.get("/", response_class=HTMLResponse, include_in_schema=False)
+# async def read_root(request: Request):
+#     """Serve o painel principal da Atena."""
+#     painel_path = FRONTEND_DIR / "painel_bolhas.html"
+#     if not painel_path.exists():
+#         return HTMLResponse(content=f"<h1>Erro 500: Arquivo do Painel não encontrado.</h1><p>Caminho procurado: {painel_path}</p>", status_code=500)
+#     return FileResponse(painel_path)
 

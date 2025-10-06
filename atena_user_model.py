@@ -14,7 +14,7 @@ from typing import Dict
 logger = logging.getLogger("AtenaUserModel")
 
 # Define o caminho para a pasta de memória do usuário de forma robusta
-MEMORIA_DIR = Path(__file__).parent.parent / 'memoria_do_usuario'
+MEMORIA_DIR = Path('./memoria_do_usuario')
 MEMORIA_DIR.mkdir(exist_ok=True) # Garante que a pasta exista
 USER_BEHAVIOR_FILE = MEMORIA_DIR / "perfil_comportamental.json"
 model_emb = None # Será injetado pelo atena_core

@@ -9,7 +9,7 @@ from typing import Optional
 from pathlib import Path
 from datetime import datetime
 
-from app.google_drive_agent import GoogleDriveAgent
+from google_drive_agent import GoogleDriveAgent
 
 logger = logging.getLogger(__name__)
 

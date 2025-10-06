@@ -5,7 +5,7 @@ usando o framework do rpa_core.
 """
 
 import logging
-from app.rpa_core import AIExecutorFramework, smart_finder, response_monitor, adaptive_timeout
+from rpa_core import AIExecutorFramework, smart_finder, response_monitor, adaptive_timeout
 
 logger = logging.getLogger(__name__)
 
