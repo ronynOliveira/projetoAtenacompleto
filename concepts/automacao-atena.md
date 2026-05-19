@@ -21,6 +21,8 @@ Sistema de automação que garante a manutenção contínua da memória, wiki e 
 | `automacao_memoria.py` | Verifica memória e migra para wiki se necessário | `~/AppData/Local/hermes/tools/` |
 | `evolucao_continua.py` | Análise com OpnCode para sugestões de melhoria | `~/AppData/Local/hermes/tools/` |
 | `verificar_atualizacoes.py` | Verifica atualizações do Hermes Agent, Desktop, skills e sistema | `~/AppData/Local/hermes/tools/` |
+| `monitor_sistema.py` | Monitor de CPU, RAM, disco e rede | `~/AppData/Local/hermes/tools/` |
+| `backup_wiki.py` | Backup automático do wiki via git | `~/AppData/Local/hermes/tools/` |
 
 ### Cron Jobs Ativos
 
@@ -28,6 +30,7 @@ Sistema de automação que garante a manutenção contínua da memória, wiki e 
 |---|---|---|
 | `atena-automacao-diaria` | 12h | Executa cerebro_atena.py — verificação completa |
 | `atena-verificar-atualizacoes` | 12h | Executa verificar_atualizacoes.py — atualizações |
+| `atena-monitor-sistema` | 6h | Executa monitor_sistema.py — CPU, RAM, disco, rede |
 
 ### Execução
 ```bash
