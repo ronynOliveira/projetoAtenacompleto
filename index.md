@@ -42,6 +42,8 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 || [[tts-windows-pipeline]] | Solução definitiva de TTS no Windows |
 || [[projetos-pendentes]] | GITHUB_TOKEN, Composio, Oracle Cloud, fluxo pesquisa |
 || [[automacao-atena]] | Sistema de automação — scripts, frequência, regras |
+|| [[distonia-generalizada]] | Base de conhecimento sobre distonia generalizada |
+|| [[subagentes]] | Sistema de subagentes especializados |
 
 ## Fontes
 
@@ -59,3 +61,4 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 - **Por memória**: [[diretivas-acessibilidade]] e [[tts-windows-pipeline]] para TTS e acessibilidade
 - **Por projeto**: [[projetos-pendentes]] para pendências, [[vps-oracle-cloud]] para nuvem
 - **Por automação**: [[automacao-atena]] para scripts e manutenção
+- **Por saúde**: [[distonia-generalizada]] para base de conhecimento sobre distonia
