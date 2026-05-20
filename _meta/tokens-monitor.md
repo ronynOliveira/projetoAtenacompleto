@@ -1,12 +1,12 @@
 ---
-title: Monitor de Tokens — 2026-05-20 09:57:08
-created: 2026-05-20 09:57:08
-updated: 2026-05-20 09:57:08
+title: Monitor de Tokens — 2026-05-20 09:57:38
+created: 2026-05-20 09:57:38
+updated: 2026-05-20 09:57:38
 type: query
 tags: [tokens, monitoramento, contingencia]
 ---
 
-# Monitor de Tokens — 2026-05-20 09:57:08
+# Monitor de Tokens — 2026-05-20 09:57:38
 
 ## Ollama Local
 - **Status:** ok

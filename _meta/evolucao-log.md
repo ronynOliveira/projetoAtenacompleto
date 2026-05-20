@@ -48,3 +48,38 @@ Os três tools são complementares:
 |---|---|
 | **Free
 ```
+
+## [2026-05-20 09:58:39] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Excelente pergunta. Com a crescente autonomia dos agentes de IA, a segurança no sistema operacional host é fundamental. Para um agente de IA rodando em Windows em 2026, o foco está em aplicar o **princípio do menor privilégio** de forma rigorosa.
+
+Aqui estão as 5 melhores práticas de segurança, focando nas áreas que você mencionou:
+
+### 1. Permissões de Arquivos e Contas de Serviço Dedicadas
+
+Em vez de rodar o agente com sua conta de usuário (que provavelmente tem privilégios de administrador ou
+```
+
+## [2026-05-20 09:58:46] Análise skills (OpnCode)
+✅ Sucesso
+```
+
+```
+
+## [2026-05-20 10:01:27] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+
+
+Análise:
+## Pipeline Unificado de Auto-Evolução: Freebuff + OpenCode + Gemini CLI
+
+### Arquitetura do Pipeline
+
+```
+┌─────────────┐     ┌──────────────┐     ┌──────────────┐     ┌─────────────┐
+│  GEMINI CLI │────▶│   FREEBUFF   │────▶│   OPENCODE   │────▶│  GEMINI CLI │
+│  (Analise & │     │  (Implementação
+```

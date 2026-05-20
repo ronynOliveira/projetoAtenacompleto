@@ -1,15 +1,15 @@
 ---
-title: Monitor de Sistema — 2026-05-20 09:57:08
-created: 2026-05-20 09:57:08
-updated: 2026-05-20 09:57:08
+title: Monitor de Sistema — 2026-05-20 09:57:38
+created: 2026-05-20 09:57:38
+updated: 2026-05-20 09:57:38
 type: query
 tags: [automacao, monitoramento, sistema]
 ---
 
-# Monitor de Sistema — 2026-05-20 09:57:08
+# Monitor de Sistema — 2026-05-20 09:57:38
 
 ## CPU
-- **Uso:** 14.0%
+- **Uso:** 6.0%
 - **Status:** ✅ OK
 
 ## RAM
@@ -18,8 +18,8 @@ tags: [automacao, monitoramento, sistema]
 - **Status:** ✅ OK
 
 ## Disco C:
-- **Uso:** 58.0%
-- **Livre:** 392.0 GB
+- **Uso:** 0%
+- **Livre:** ? GB
 - **Status:** ✅ OK
 
 ## Rede

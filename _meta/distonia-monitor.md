@@ -1,17 +1,17 @@
 ---
-title: Monitor Distonia — 2026-05-20 09:57:05
-created: 2026-05-20 09:57:05
-updated: 2026-05-20 09:57:05
+title: Monitor Distonia — 2026-05-20 09:57:35
+created: 2026-05-20 09:57:35
+updated: 2026-05-20 09:57:35
 type: query
 tags: [distonia, saude, monitoramento, pesquisa]
 ---
 
-# Monitor de Distonia Generalizada — 2026-05-20 09:57:05
+# Monitor de Distonia Generalizada — 2026-05-20 09:57:35
 
 ## Resumo
 - **Termos pesquisados:** 7
 - **Resultados encontrados:** 7
-- **Data:** 2026-05-20 09:57:05
+- **Data:** 2026-05-20 09:57:35
 
 ## Novidades Encontradas
 

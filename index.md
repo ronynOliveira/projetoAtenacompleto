@@ -44,6 +44,8 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 || [[automacao-atena]] | Sistema de automação — scripts, frequência, regras |
 || [[distonia-generalizada]] | Base de conhecimento sobre distonia generalizada |
 || [[subagentes]] | Sistema de subagentes especializados |
+|| [[analise-arquitetura]] | Análise completa da arquitetura do projeto |
+|| [[plano-refinamento-logica]] | Plano de refinamento da lógica do OWL |
 
 ## Fontes
 
