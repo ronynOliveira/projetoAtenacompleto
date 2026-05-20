@@ -1,22 +1,22 @@
 ---
-title: Monitor Distonia — 2026-05-19 17:03:59
-created: 2026-05-19 17:03:59
-updated: 2026-05-19 17:03:59
+title: Monitor Distonia — 2026-05-20 09:57:05
+created: 2026-05-20 09:57:05
+updated: 2026-05-20 09:57:05
 type: query
 tags: [distonia, saude, monitoramento, pesquisa]
 ---
 
-# Monitor de Distonia Generalizada — 2026-05-19 17:03:59
+# Monitor de Distonia Generalizada — 2026-05-20 09:57:05
 
 ## Resumo
 - **Termos pesquisados:** 7
 - **Resultados encontrados:** 7
-- **Data:** 2026-05-19 17:03:59
+- **Data:** 2026-05-20 09:57:05
 
 ## Novidades Encontradas
 
 ### distonia generalizada tratamento 2026
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo: Tratamento da Distonia Generalizada (2026)
 
@@ -28,7 +28,7 @@ tags: [distonia, saude, monitoramento, pesquisa]
    - Anticolinérgicos (trihexifenidil), baclofeno, benzodiazepínicos e tetrabenazina
 
 ### dystonia generalized research 2025 2026
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo das Pesquisas sobre Distonia Generalizada (2025-2026)
 
@@ -37,7 +37,7 @@ tags: [distonia, saude, monitoramento, pesquisa]
 - **Maior estudo de sequenciamento de exoma** (1.924 pacientes): Rendimento diagnóstico de 8,1%, sendo **56,2% das variantes novas**. Distonia ge
 
 ### distonia DBS estimulação cerebral profunda novidades
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo: Novidades sobre DBS (Estimulação Cerebral Profunda) para Distonia
 
@@ -47,7 +47,7 @@ A **Medtronic** recebeu aprovação da FDA para ampliar o rótulo clínico do DB
 ### 2. STN-
 
 ### distonia toxina botulínica avanços
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Avanços Recentes em Toxina Botulínica para Distonia
 
@@ -57,7 +57,7 @@ Estudo randomizado brasileiro demonstrou que injeções guiadas por **ultrassom 
 **2. Combinação com E
 
 ### distonia terapia gênica pesquisa clínica
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo: Distonia e Terapia Gênica — Pesquisa Clínica
 
@@ -70,7 +70,7 @@ A terapia gênica para distonia ainda está em **fase pré-clínica e de estági
 - **Silenciamento gênico (RNAi):** Pesquisas focam em silenciar o gene mutante *TOR1A* (DYT1) usando vetores virais AAV em modelos animais, com melh
 
 ### VIM0423 dystonia trial results
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo dos Resultados do Estudo VIM0423 para Distonia
 
@@ -83,7 +83,7 @@ A terapia gênica para distonia ainda está em **fase pré-clínica e de estági
 - Efeitos colaterais foram leves (dor de cabeça, desconfort
 
 ### distonia qualidade de vida exercícios
-**Fonte:** OpnCode
+**Fonte:** cache
 
 ## Resumo: Distonia, Qualidade de Vida e Exercícios
 

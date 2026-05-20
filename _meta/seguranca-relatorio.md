@@ -1,12 +1,12 @@
 ---
-title: Relatório de Segurança — 2026-05-19 16:22:45
-created: 2026-05-19 16:22:45
-updated: 2026-05-19 16:22:45
+title: Relatório de Segurança — 2026-05-20 09:57:24
+created: 2026-05-20 09:57:24
+updated: 2026-05-20 09:57:24
 type: query
 tags: [seguranca, auditoria, manutencao]
 ---
 
-# Relatório de Segurança — 2026-05-19 16:22:45
+# Relatório de Segurança — 2026-05-20 09:57:24
 
 ## Permissões de Arquivos
 ⚠️  C:\Users\dell-\.hermes\.env é legível por outros usuários
@@ -22,7 +22,7 @@ tags: [seguranca, auditoria, manutencao]
 ## Processos
 - **gateway Hermes:** ⚠️  Parado
 - **Chrome CDP:** ✅ Rodando
-- **Kimi WebBridge:** ⚠️  Parado
+- **Kimi WebBridge:** ✅ Rodando
 
 ## Backup Wiki
 ⚠️  Mudanças não commitadas no wiki

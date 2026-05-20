@@ -1,16 +1,16 @@
 ---
-title: Monitor de Tokens — 2026-05-19 17:40:11
-created: 2026-05-19 17:40:11
-updated: 2026-05-19 17:40:11
+title: Monitor de Tokens — 2026-05-20 09:57:08
+created: 2026-05-20 09:57:08
+updated: 2026-05-20 09:57:08
 type: query
 tags: [tokens, monitoramento, contingencia]
 ---
 
-# Monitor de Tokens — 2026-05-19 17:40:11
+# Monitor de Tokens — 2026-05-20 09:57:08
 
 ## Ollama Local
-- **Status:** erro
-- **Modelos disponíveis:** 0
+- **Status:** ok
+- **Modelos disponíveis:** 9
 
 ## OpenRouter
 - **Status:** configurado
