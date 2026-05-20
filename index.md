@@ -46,9 +46,10 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 | [[subagentes]] | Sistema de subagentes especializados |
 | [[analise-arquitetura]] | Análise completa da arquitetura do projeto |
 | [[plano-refinamento-logica]] | Plano de refinamento da lógica do OWL |
-| [[capacidade-visao]] | Capacidade de visão e multimodal do OWL |
-| [[guia-comandos-hermes]] | Guia de comandos CLI do Hermes |
-| [[plano-contingencia]] | Plano de contingência — tokens e modelos |
+|| [[capacidade-visao]] | Capacidade de visão e multimodal do OWL |
+|| [[guia-comandos-hermes]] | Guia de comandos CLI do Hermes |
+|| [[plano-contingencia]] | Plano de contingência — tokens e modelos |
+|| [[monitor-temperatura-diadema]] | Monitor de temperatura para Diadema/SP |
 
 ## Fontes
 

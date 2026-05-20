@@ -31,6 +31,13 @@ O Arquiteto tem sensibilidade à luz e dificuldade para ler o terminal. **SEMPRE
 - Cada clique desnecessário é uma batalha a ser vencida
 - NUNCA pedir para o Arquiteto falar
 
+### Localização e Saúde
+- **Localização**: Diadema, SP
+- **Alerta de temperatura**: Temperatura fria (abaixo de 15°C) piora os sintomas da distonia
+- **Monitor**: Script `monitor_tempo_diadema.py` verifica previsão a cada 12h via API Open-Meteo
+- **Ações quando temperatura cair**: agasalhar-se, evitar exposição ao frio, manter-se aquecido
+- **Latitude**: -23.6861 | **Longitude**: -46.6167
+
 ### Formato de Resposta
 - Respostas estruturadas, não blocos de texto densos
 - Listas e headers para fácil leitura
