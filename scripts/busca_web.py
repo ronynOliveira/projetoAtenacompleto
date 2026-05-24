@@ -57,6 +57,84 @@ CHROME_CDP_PORT = 9222
 GEMINI_PATH = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", "npm", "gemini.cmd")
 OPCODE_MODEL = "opencode/qwen3.6-plus-free"
 
+# ════════════════════════════════════════════
+# LEARNING SYSTEM
+# ════════════════════════════════════════════
+LEARNED_FILE = Path.home() / "wiki" / "scripts" / "learned_sources.json"
+DEFAULT_ORDER = ["opencode", "kimi", "gemini", "freebuff"]
+
+def load_learned_data():
+    """Load learned source scores from JSON file."""
+    if LEARNED_FILE.exists():
+        try:
+            with open(LEARNED_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.debug(f"Erro ao carregar learned data: {e}")
+            return {}
+    return {}
+
+def save_learned_data(data):
+    """Save learned source scores to JSON file."""
+    try:
+        LEARNED_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(LEARNED_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.debug(f"Erro ao salvar learned data: {e}")
+
+def categorize_query(query: str) -> str:
+    """Categorize the query to apply different learning strategies."""
+    q_lower = query.lower()
+    # News/time-sensitive
+    if any(word in q_lower for word in ["notícia", "hoje", "últimas", "últimos", "agora", "último", "última", "notícias"]):
+        return "news"
+    # Historical/fact-based
+    if any(word in q_lower for word in ["histórico", "história", "definição", "o que é", "quem foi", "quando ocorreu", "ano", "data"]):
+        return "history"
+    # Generic
+    return "generic"
+
+
+def get_dynamic_ttl(query: str) -> int:
+    """Return TTL in seconds based on query category."""
+    category = categorize_query(query)
+    if category == "news":
+        return 300  # 5 minutes for news
+    if category == "history":
+        return 86400  # 24 hours for historical/fact-based
+    return CACHE_TTL  # default 1 hour for generic
+
+
+def update_learning(query: str, successful_source: str):
+    """Update the learned scores for the query's category."""
+    data = load_learned_data()
+    category = categorize_query(query)
+    if category not in data:
+        data[category] = {source: 0 for source in DEFAULT_ORDER}
+    # Increment score for the successful source
+    if successful_source in data[category]:
+        data[category][successful_source] += 1
+    else:
+        # Ensure the source exists in the dict
+        data[category][successful_source] = 1
+    save_learned_data(data)
+
+def get_learned_order(query: str) -> list:
+    """Return source order based on learned scores for the query's category."""
+    data = load_learned_data()
+    category = categorize_query(query)
+    if category in data and data[category]:
+        # Sort sources by score descending, then by default order for ties
+        scored = [(source, data[category].get(source, 0)) for source in DEFAULT_ORDER]
+        scored.sort(key=lambda x: (-x[1], DEFAULT_ORDER.index(x[0])))
+        return [source for source, _ in scored]
+    return DEFAULT_ORDER.copy()
+
+# Rate limit cooldown for Gemini
+GEMINI_COOLDOWN = 60  # seconds
+_gemini_rate_limit_reset = 0  # timestamp when cooldown ends
+
 
 # ═══════════════════════════════════════════
 # CACHE
@@ -68,8 +146,12 @@ def cache_path(query: str) -> Path:
     return CACHE_DIR / f"{h}.json"
 
 
-def cache_load(query: str, ttl: int = CACHE_TTL) -> str | None:
-    """Carrega resultado do cache se válido."""
+def cache_load(query: str, ttl: int | None = None) -> str | None:
+    """Carrega resultado do cache se válido.
+    Se ttl for None, usa TTL dinâmico baseado na categoria da query.
+    """
+    if ttl is None:
+        ttl = get_dynamic_ttl(query)
     try:
         p = cache_path(query)
         if not p.exists():
@@ -227,7 +309,12 @@ def _extrair_texto_tree(tree) -> str:
 
 
 def buscar_gemini(query: str) -> str | None:
-    """Busca via Gemini CLI."""
+    """Busca via Gemini CLI com detecção de rate limit."""
+    global _gemini_rate_limit_reset
+    # Verificar cooldown
+    if time.time() < _gemini_rate_limit_reset:
+        logger.debug("Gemini em cooldown devido a rate limit")
+        return None
     try:
         cmd = [
             GEMINI_PATH, "--model", "gemini-2.5-pro",
@@ -236,8 +323,17 @@ def buscar_gemini(query: str) -> str | None:
         ]
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
         if result.returncode == 0 and result.stdout.strip():
-            return result.stdout.strip()
-        return None
+            output = result.stdout.strip()
+            # Verificar indicadores de rate limit
+            lower_output = output.lower()
+            if any(indicator in lower_output for indicator in ("429", "rate limit", "quota")):
+                logger.warning("Detectado rate limit no Gemini: %s", output[:100])
+                _gemini_rate_limit_reset = time.time() + GEMINI_COOLDOWN
+                return None
+            return output
+        else:
+            logger.debug("Gemini retornou erro ou vazio: %s", result.stderr[:100] if result.stderr else "sem stderr")
+            return None
     except Exception as e:
         logger.debug("Gemini indisponível: %s", e)
         return None
@@ -302,8 +398,8 @@ def buscar(query: str, usar_cache: bool = True, fonte: str = None) -> str | None
             logger.error("Fonte desconhecida: %s", fonte)
             return None
     else:
-        # Cascata: Kimi → Gemini → Opencode → Freebuff
-        ordem = ["kimi", "gemini", "opencode", "freebuff"]
+        # Cascata: learned order based on query category
+        ordem = get_learned_order(query)
         for nome in ordem:
             print(f"  🔍 Tentando: {FONTES[nome]['desc']}...")
             try:
@@ -311,6 +407,7 @@ def buscar(query: str, usar_cache: bool = True, fonte: str = None) -> str | None
                 if resultado and len(resultado.strip()) > 50:
                     print(f"  ✅ Sucesso: {FONTES[nome]['desc']}")
                     cache_save(query, resultado)
+                    update_learning(query, nome)  # Record success
                     return resultado
             except Exception as e:
                 logger.debug("Erro em %s: %s", nome, e)
