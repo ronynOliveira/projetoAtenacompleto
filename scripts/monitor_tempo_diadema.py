@@ -2,6 +2,7 @@
 """
 Monitor de Previsão do Tempo para Diadema/SP.
 Verifica a cada 12h se a temperatura vai cair e alerta o Senhor Robério.
+VERSÃO REFLEXÃO - Integrada com Reflexion Engine para aprendizado contínuo.
 
 Uso: python monitor_tempo_diadema.py
 """
@@ -12,6 +13,16 @@ import sys
 import os
 from datetime import datetime
 from pathlib import Path
+
+# ═══════════════════════════════════════════
+# RELEXION ENGINE INTEGRATION
+# ═══════════════════════════════════════════
+sys.path.insert(0, str(Path(__file__).parent.parent))
+try:
+    from scripts.reflexion_tools import DistoniaAwareMonitor
+    HAS_REFLEXION = True
+except ImportError:
+    HAS_REFLEXION = False
 
 # ═══════════════════════════════════════════
 # CONFIGURAÇÃO
@@ -243,6 +254,13 @@ def main():
     
     # Analisar previsão
     alertas = analisar_previsao(data)
+    
+    # Aplicar reflexão se disponível
+    if HAS_REFLEXION and alertas:
+        temp_min = alertas[0]['temp_min'] if alertas else 0
+        monitor = DistoniaAwareMonitor("monitor_temperatura")
+        reflection_result = monitor.check_temperature(temp_min)
+        log_info(f"Reflexão: confiança={reflection_result['confianca']:.2f}")
     
     if alertas:
         msg = gerar_alerta(alertas)
