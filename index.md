@@ -67,5 +67,6 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 - **Por memória**: [[diretivas-acessibilidade]] e [[tts-windows-pipeline]] para TTS e acessibilidade
 - **Por projeto**: [[projetos-pendentes]] para pendências, [[vps-oracle-cloud]] para nuvem
 - **Por automação**: [[automacao-atena]] para scripts e manutenção
+- **Por CodeGraph**: [[ferramentas/codegraph]] para grafo de conhecimento do código
 - **Por saúde**: [[distonia-generalizada]] para base de conhecimento sobre distonia
 - **Por análise**: [[analise-arquitetura]] e [[plano-refinamento-logica]] para melhorias
