@@ -61,6 +61,7 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 | Página | Descrição |
 |---|---|
 | [[sessao-2026-05-30-google-search]] | Instalação Google Search Playwright, wrapper com fallback |
+| [[sessao-2026-05-30-ferramentas]] | QMD Memory, Auto Research, ferramentas de pesquisa e programação |
 | [[aprendizados-sessao-2026-05-27]] | Registro completo da sessão 27/05/2026 |
 | [[conversa-koldi-gemini]] | Conversa com Gemini — Como ser um assistente melhor |
 | [[teorias-psicologicas-identidade-ia]] | 9 teorias psicológicas aplicadas a agentes de IA |
