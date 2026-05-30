@@ -65,7 +65,14 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 | [[aprendizados-sessao-2026-05-27]] | Registro completo da sessão 27/05/2026 |
 | [[conversa-koldi-gemini]] | Conversa com Gemini — Como ser um assistente melhor |
 | [[teorias-psicologicas-identidade-ia]] | 9 teorias psicológicas aplicadas a agentes de IA |
-| [[koldi-evolucao-identidade]] | Apresentação HTML interativa (Three.js) |
+|| [[sessao-2026-05-30-final]] | Code Profiler, scan 53 tools, resumo completo |
+| [[relatorio-completo-koldi-vs-hermes]] | **Relatório Comparativo Koldi vs Hermes Original** |
+
+## Análises e Relatórios
+
+| Página | Descrição |
+|---|---|
+| [[relatorio-completo-koldi-vs-hermes]] | Comparativo detalhado Koldi vs Hermes Agent original |
 
 ## Navegação
 
