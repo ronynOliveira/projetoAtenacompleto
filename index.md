@@ -1,7 +1,7 @@
 ---
 title: Atena Wiki — Índice
 created: 2026-05-18
-updated: 2026-05-27
+updated: 2026-05-30
 type: index
 tags: [index, navegacao]
 ---
@@ -9,7 +9,7 @@ tags: [index, navegacao]
 # Atena Wiki — Índice
 
 Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habilidades e conhecimento acumulado.
-Última atualização: 2026-05-27 | Total: 95 páginas
+Última atualização: 2026-05-30 | Total: 96 páginas
 
 ## Entidades
 
@@ -60,6 +60,7 @@ Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habi
 
 | Página | Descrição |
 |---|---|
+| [[sessao-2026-05-30-google-search]] | Instalação Google Search Playwright, wrapper com fallback |
 | [[aprendizados-sessao-2026-05-27]] | Registro completo da sessão 27/05/2026 |
 | [[conversa-koldi-gemini]] | Conversa com Gemini — Como ser um assistente melhor |
 | [[teorias-psicologicas-identidade-ia]] | 9 teorias psicológicas aplicadas a agentes de IA |
