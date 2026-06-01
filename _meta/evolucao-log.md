@@ -263,3 +263,30 @@ Com base nas tendências atuais e na sua necessidade de ferramentas gratuitas, o
 Análise:
 
 ```
+
+## [2026-06-01 08:09:08] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Com base nas tendências atuais e projeções de segurança, aqui estão as 5 melhores práticas de segurança para um agente de IA rodando em Windows em 2026, com foco nos seus pontos de interesse.
+
+### 1. Isolamento Robusto de Processos (Process Isolation)
+
+Esta é a defesa mais crucial. Um agente comprometido não deve conseguir afetar o sistema hospedeiro.
+
+*   **O quê:** Execute o agente de IA dentro de um ambiente de sandbox que virtualiza o acesso ao sistema operacional, hardware e rede.
+*   **Por
+```
+
+## [2026-06-01 08:10:13] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Excelente pergunta! Pensando no cenário de 2026, onde a maturidade e a otimização das ferramentas locais serão ainda maiores, estas seriam as 3 ferramentas de IA open-source mais úteis para um assistente pessoal rodando localmente no Windows:
+
+### 1. Ollama (O Cérebro do Assistente)
+
+**O que é:** Ol
+
+Análise:
+
+```
