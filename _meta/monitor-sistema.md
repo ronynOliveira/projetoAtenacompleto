@@ -1,15 +1,15 @@
 ---
-title: Monitor de Sistema — 2026-05-24 15:36:10
-created: 2026-05-24 15:36:10
-updated: 2026-05-24 15:36:10
+title: Monitor de Sistema — 2026-05-27 15:57:42
+created: 2026-05-27 15:57:42
+updated: 2026-05-27 15:57:42
 type: query
 tags: [automacao, monitoramento, sistema]
 ---
 
-# Monitor de Sistema — 2026-05-24 15:36:10
+# Monitor de Sistema — 2026-05-27 15:57:42
 
 ## CPU
-- **Uso:** 3.0%
+- **Uso:** 20.0%
 - **Status:** ✅ OK
 
 ## RAM
@@ -27,11 +27,3 @@ tags: [automacao, monitoramento, sistema]
 
 ## Alertas
 Nenhum alerta — sistema saudável
-
-## 2026-05-24 15:36:59
-- CPU: 3.0% ✅
-- RAM: ~65% (erro de parsing locale, valor estimado do stderr) ✅
-- Disco: ~60% usado (erro de parsing locale) ✅
-- Rede: OK ✅
-- Status: SISTEMA SAUDÁVEL — sem alertas críticos
-- Notas: Bug de locale no script (vírgula decimal do Windows). Corrigir `monitor_sistema.py` para usar `replace(',', '.')` antes de `float()`.
