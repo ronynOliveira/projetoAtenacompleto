@@ -290,3 +290,27 @@ Excelente pergunta! Pensando no cenário de 2026, onde a maturidade e a otimiza�
 Análise:
 
 ```
+
+## [2026-06-02 17:35:00] Diagnóstico Manual — Cron Auto-Evolução
+✅ Sucesso (diagnóstico direto, motor_evolucao.py bloqueado por approval)
+```
+MOTOR DE EVOLUÇÃO — Diagnóstico Manual 2026-06-02 17:35
+
+### Sistema
+- Ollama: ✅ ONLINE (7 modelos, ~37GB total) — relatório anterior dizia OFFLINE
+- RAM livre: 2.81 GB (~82% usado) — monitor mostra 0% por bug pt-BR vírgula decimal
+- CPU: 77% — normal
+- Rede: ✅ OK
+- Wiki: 30 páginas, 150 skills
+
+### Cron Jobs com Erro (4 novos)
+1. koldi-security-watchdog → ModuleNotFoundError: lib.memory_pipeline
+2. Hermes Auto-Update → Script not found: auto_update.py
+3. koldi-g-backup-auto → Script not found: tools/backup_automatico.py
+4. atena-monitor-distonia → qwen3-4b context 32K < 64K mínimo
+
+### Nenhuma nova skill criada.
+Nenhuma melhoria de segurança implementada automaticamente.
+Pendências continuam: GITHUB_TOKEN, Telegram, FAL_KEY, Google OAuth.
+- Bug monitor_sistema.py (vírgula pt-BR) ainda não corrigido.
+```

@@ -1,12 +1,12 @@
 ---
-title: Verificação de Atualizações — 2026-06-02 05:20:40
-created: 2026-06-02 05:20:40
-updated: 2026-06-02 05:20:40
+title: Verificação de Atualizações — 2026-06-02 17:36:59
+created: 2026-06-02 17:36:59
+updated: 2026-06-02 17:36:59
 type: query
 tags: [automacao, atualizacao, manutencao]
 ---
 
-# Verificação de Atualizações — 2026-06-02 05:20:40
+# Verificação de Atualizações — 2026-06-02 17:36:59
 
 ## Hermes Agent
 - **Status:** update
@@ -22,7 +22,7 @@ tags: [automacao, atualizacao, manutencao]
 - **Total:** 150 instaladas
 
 ## Sistema
-- **python:** Python 3.14.0a7
+- **python:** Python 3.11.9
 - **npm:** não encontrado
 - **opencode:** não encontrado
 

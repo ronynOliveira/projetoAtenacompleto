@@ -1,12 +1,12 @@
 ---
-title: Relatório Consolidado — 2026-06-02 05:20:40
-created: 2026-06-02 05:20:40
-updated: 2026-06-02 05:20:40
+title: Relatório Consolidado — 2026-06-02 17:37:03
+created: 2026-06-02 17:37:03
+updated: 2026-06-02 17:37:03
 type: query
 tags: [automacao, relatorio, manutencao]
 ---
 
-# Relatório Consolidado — 2026-06-02 05:20:40
+# Relatório Consolidado — 2026-06-02 17:37:03
 
 ## Memória do Sistema
 - **Uso:** 0%
