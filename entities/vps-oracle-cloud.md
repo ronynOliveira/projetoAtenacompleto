@@ -10,6 +10,8 @@ confidence: medium
 
 # VPS Oracle Cloud — Projeto Nuvem
 
+> Ver também: [[ambiente-tecnico]] (infraestrutura), [[hermes-agent]] (gateway)
+
 ## Registro migrado da memória do sistema do Hermes.
 
 ### Objetivo

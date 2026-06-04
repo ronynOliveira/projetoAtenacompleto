@@ -10,6 +10,8 @@ confidence: high
 
 # TTS Windows — Solução Definitiva
 
+> Ver também: [[diretivas-acessibilidade]] (TTS obrigatório), [[fala-assistida-koldi]] (sistema de fala)
+
 ## Registro migrado da memória do sistema do Hermes.
 
 ### Problema

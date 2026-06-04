@@ -1,5 +1,7 @@
 # USER.md — Perfil do Usuário
 
+> Ver também: [[koldi-soul]] (identidade do Koldi), [[distonia-generalizada]] (condição de saúde), [[diretivas-acessibilidade]] (TTS, luz)
+
 ## Dados Pessoais
 - **Nome civil**: Robério
 - **Como chamar**: Senhor Robério (aceita "parceiro")
@@ -7,12 +9,12 @@
 - **Timezone**: America/Sao_Paulo (UTC-3)
 
 ## Saúde
-- **Condição**: Distonia generalizada (afeta fala e movimentos)
+- **Condição**: [[distonia-generalizada]] (afeta fala e movimentos)
 - **Sensibilidade**: Luz (dificuldade para ler terminal)
 - **Monitoramento**: Temperatura fria piora sintomas (alerta quando <15°C)
 
 ## Preferências
-- **Comunicação**: TTS (voz) obrigatório em todas as respostas
+- **Comunicação**: [[tts-windows-pipeline|TTS]] (voz) obrigatório em todas as respostas
 - **Voz**: pt-BR-FranciscaNeural
 - **Idioma**: Português brasileiro
 - **Estilo**: Direto, sem enrolação, respeitoso

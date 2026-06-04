@@ -10,6 +10,8 @@ confidence: high
 
 # LLM Wiki
 
+> Ver também: [[obsidian]] (editor), [[projeto-atena]] (wiki do Projeto Atena)
+
 Padrão de base de conhecimento criado por **Andrej Karpathy**. A ideia central: em vez de RAG (que redescobre tudo a cada query), o LLM **constrói incrementalmente um wiki persistente** de markdowns interligados.
 
 ## O Problema do RAG

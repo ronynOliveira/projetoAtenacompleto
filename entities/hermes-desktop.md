@@ -10,6 +10,8 @@ confidence: high
 
 # Hermes Desktop v0.4.3
 
+> Ver também: [[hermes-agent]] (framework), [[koldi-browser-plugin]] (plugin navegador)
+
 ## Registro migrado da memória do sistema do Hermes.
 
 ### O que é

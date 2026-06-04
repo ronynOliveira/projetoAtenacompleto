@@ -10,6 +10,8 @@ confidence: high
 
 # Obsidian
 
+> Ver também: [[llm-wiki]] (metodologia Karpathy), [[projeto-atena]] (wiki)
+
 Editor de notas markdown que serve como **interface gráfica** para o wiki do Projeto Atena. É o "IDE" onde o Arquiteto navega o conhecimento construído pelos agentes.
 
 ## O que é

@@ -10,6 +10,8 @@ confidence: high
 
 # Plano de Contingência — Tokens e Modelos
 
+> Ver também: [[hermes-agent]] (providers), [[ambiente-tecnico]] (infraestrutura)
+
 ## Situação Atual
 - **Modelo principal:** openrouter/owl-alpha (via OpenRouter)
 - **Tokens:** limitados por quota/custo

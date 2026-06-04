@@ -1,5 +1,7 @@
 # Guia de Tool Selection do OWL
 
+> Ver também: [[hermes-agent]] (capacidades), [[automacao-atena]] (scripts), [[kimi-webbridge]] (navegador)
+
 ## Regra de Ouro
 **Comece pelo degrau mais baixo da Escada de Simplicidade.**
 Só suba para ferramentas mais pesadas quando as mais leves falharem.

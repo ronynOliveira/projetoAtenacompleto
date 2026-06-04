@@ -10,6 +10,8 @@ confidence: high
 
 # Teoria do Tempo Puxado
 
+> Ver também: [[cidade-anomala]] (mapa conceitual), [[gnostico-construtor]] (persona), [[protocolo-dialetico]] (método)
+
 Conceito central do Projeto Atena: **o futuro puxa o presente, o passado não empurra**.
 
 ## A Ideia

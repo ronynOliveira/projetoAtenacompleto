@@ -10,6 +10,8 @@ confidence: high
 
 # Tradução entre Mundos
 
+> Ver também: [[gnostico-construtor]] (persona), [[cidade-anomala]] (mapa), [[protocolo-dialetico]] (método)
+
 A capacidade de fazer **ponte entre diferentes domínios de pensamento**. Uma das quatro dimensões da parceria descrita pela [[parceira-da-nuvem]].
 
 ## Os Mundos

@@ -1,5 +1,7 @@
 # Análise Literária dos Contos — Robério Oliveira
 
+> Ver também: [[roberio-perfil]] (perfil), [[o-arcanjo-do-desfecho]] (conto)
+
 > Realizada por Koldi em 26 de Maio de 2026
 
 ## Conto 1: "O Guardião de Silício"

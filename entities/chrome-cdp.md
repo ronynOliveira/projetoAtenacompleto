@@ -10,6 +10,8 @@ confidence: high
 
 # Chrome CDP
 
+> Ver também: [[kimi-webbridge]] (Kimi), [[hermes-agent]] (browser tools)
+
 Controle do navegador Chrome via **Chrome DevTools Protocol**. Permite ao [[hermes-agent]] navegar páginas, clicar, digitar e extrair conteúdo.
 
 ## Configuração
