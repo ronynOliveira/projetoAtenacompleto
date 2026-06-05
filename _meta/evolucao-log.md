@@ -163,3 +163,42 @@ Com certeza! Com base nas tendências atuais e na evolução da IA, aqui estão 
 Análise:
 
 ```
+
+## [2026-06-05] Diagnóstico Manual - Motor de Evolução (Cron)
+⚠️ Motor não executou automaticamente — diagnose manual via terminal().
+
+### Estado das Ferramentas
+- ✅ Gemini CLI: disponível (rate limit no modelo pro, flash funciona)
+- ✅ Opencode: disponível em PATH
+- ✅ Freebuff: disponível em PATH
+- ⚠️ Python venv: corrompido (pyvenv.cfg ausente)
+- ✅ Python sistema: disponível em AppData/Local/Programs/Python/Python311/
+
+### Problema Identificado
+O motor_evolucao.py timeouta (>60s) quando executado diretamente porque:
+1. subprocess.run com shell=True não herda PATH completo (npm global não encontrado)
+2. Gemini CLI com modelo pro retorna 429 (rate limit)
+3. Opencode e freebuff dependem de API calls com latência alta
+
+### Pesquisa Gemini (flash) - Segurança
+3 principais vulnerabilidades identificadas:
+1. Tokens de API expostos em arquivos de configuração texto-simples
+2. Permissões de arquivo inadequadas (acesso amplo para "Todos")
+3. Isolamento de processos insuficiente (risco de escalada)
+
+### Diagnóstico de Segurança do Sistema
+- ✅ Config.yaml: sem tokens hardcoded (usa api_key_env para GOOGLE_API_KEY e OPENROUTER_API_KEY)
+- ⚠️ SSH id_ed25519: é chave PÚBLICA (98 bytes), não privada — sem risco de exposição
+- ✅ Disco: 409G livres (57%) em C:, 388G livres (59%) em G:
+- ✅ Gateway: rodando (PID 28708)
+- ⚠️ security_watchdog.py: ERRO — ModuleNotFoundError: lib.memory_pipeline
+- ⚠️ key-checkin-1h: delivery falhou (telegram não configurado)
+- ✅ 30 skills instaladas
+- ✅ 24 cron jobs ativos
+
+### Ações Recomendadas
+1. Corrigir security_watchdog.py — módulo lib.memory_pipeline não encontrado
+2. Corrigir venv Python (pyvenv.cfg ausente)
+3. Atualizar motor_evolucao.py para usar PATH completo e modelo flash
+4. Configurar telegram para delivery do key-checkin
+
