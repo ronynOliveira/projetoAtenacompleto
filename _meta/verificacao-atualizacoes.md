@@ -1,33 +1,38 @@
 ---
-title: Verificação de Atualizações — 2026-06-02 17:36:59
-created: 2026-06-02 17:36:59
-updated: 2026-06-02 17:36:59
-type: query
-tags: [automacao, atualizacao, manutencao]
+title: Verificação de Atualizações — 2026-06-09 18:54
+date: 2026-06-09
+type: cron-report
+tags: [atualizacao, manutencao, hermes]
 ---
 
-# Verificação de Atualizações — 2026-06-02 17:36:59
+# Verificação de Atualizações — 2026-06-09 18:54
+
+## Resumo
+Verificação automática via cron job. **2 atualizações detectadas.**
 
 ## Hermes Agent
-- **Status:** update
-- **Mensagem:** Atualização disponível
+- **Instalado:** 0.14.0
+- **PyPI Latest:** 0.16.0
+- **Status:** ⚠️ 2 versões de atraso (0.15.0 e 0.15.1 e 0.15.2 e 0.16.0)
+- **Ação recomendada:** `pip install --upgrade hermes-agent`
 
 ## Hermes Desktop
-- **Status:** ok
-- **Versão:** 0.4.3
-- **Mensagem:** N/A
+- **Anterior:** 0.4.3
+- **Atual:** 0.5.8
+- **Status:** ✅ Já atualizado (mudança detectada desde última verificação)
 
 ## Skills
-- **Status:** ok
-- **Total:** 150 instaladas
+- **Total:** 152 instaladas (antes 150)
+- **Status:** ✅ OK
 
 ## Sistema
-- **python:** Python 3.11.9
+- **Python:** 3.11.9 ✅
 - **npm:** não encontrado
 - **opencode:** não encontrado
 
-## Precisa de Intervenção do Arquiteto
-⚠️ SIM — ver detalhes acima
+## Ações Necessárias do Arquiteto
+1. **Atualizar Hermes Agent** — `pip install --upgrade hermes-agent` (0.14.0 → 0.16.0)
+2. Reiniciar gateway após update
 
-## Próxima Verificação
-A cada 12 horas via cron job.
+## TTS
+✅ Resumo falado em voz alta via edge-tts (pt-BR-AntonioNeural)
