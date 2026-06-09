@@ -54,3 +54,11 @@ confidence: high
 - [[diretivas-acessibilidade]]
 - [[hermes-agent-config]]
 - [[projeto-atena]]
+
+
+## Atualização 2026-06-02
+
+- identity_manager.py criado (CRUD + anti-drift v4.2)
+- subagent_runner.py criado (orquestração multi-terminal)
+- Composio: Gmail, GitHub, Google Calendar conectados
+- MCP Composio local em investigação (rota 404)

@@ -10,6 +10,8 @@ confidence: high
 
 # Comando /goal — Guia Completo
 
+> Ver também: [[guia-comandos-hermes]] (referência completa), [[hermes-agent]] (framework)
+
 ## O que é?
 O `/goal` define um **objetivo permanente** que o Hermes persegue automaticamente, turno após turno, até completar. É inspirado no "Ralph loop" — um loop de trabalho autônomo.
 

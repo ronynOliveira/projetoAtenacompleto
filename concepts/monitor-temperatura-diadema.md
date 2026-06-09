@@ -10,6 +10,8 @@ confidence: high
 
 # Monitor de Temperatura — Diadema/SP
 
+> Ver também: [[distonia-generalizada]] (condição), [[diretivas-acessibilidade]] (saúde)
+
 ## Contexto
 O Senhor Robério mora em **Diadema, SP** e tem distonia generalizada. Temperaturas frias (abaixo de 15°C) pioram os sintomas. Por isso, foi criado um monitor automático de previsão do tempo.
 

@@ -10,6 +10,8 @@ confidence: high
 
 # Framework de Identidade do OWL v3.0
 
+> Ver também: [[koldi-soul]] (SOUL.md), [[koldi-hermes]] (HERMES.md), [[teorias-psicologicas-identidade-ia]] (pesquisa)
+
 ## Visão Geral
 
 Baseado nas melhores práticas de design de persona para agentes IA (2025-2026),

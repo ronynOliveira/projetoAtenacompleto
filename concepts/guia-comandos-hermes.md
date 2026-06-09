@@ -10,6 +10,8 @@ confidence: high
 
 # Guia de Comandos do Hermes Agent
 
+> Ver também: [[hermes-agent]] (framework), [[guia-comando-goal]] (delegação)
+
 ## Comandos CLI Principais
 
 ### Chat e Sessão
