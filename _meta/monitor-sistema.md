@@ -1,29 +1,16 @@
----
-title: Monitor de Sistema — 2026-06-02 17:36:58
-created: 2026-06-02 17:36:58
-updated: 2026-06-02 17:36:58
-type: query
-tags: [automacao, monitoramento, sistema]
----
+# Monitor de Sistema — Projeto Atena
 
-# Monitor de Sistema — 2026-06-02 17:36:58
+## Última verificação: 2026-06-09 12:54
 
-## CPU
-- **Uso:** 77.0%
-- **Status:** ✅ OK
+| Recurso | Valor | Status |
+|---------|-------|--------|
+| CPU | 13% | ✅ Saudável |
+| RAM | 64.5% usado (5.6GB livre / 15.7GB total) | ✅ Saudável |
+| Disco C: | 57.9% usado (392.4GB livre / 933GB) | ✅ Saudável |
+| Disco G: | 60% usado (372.8GB livre / 933GB) | ✅ Saudável |
+| Rede | ✅ OK (ping 8.8.8.8: 8ms média) | ✅ Saudável |
 
-## RAM
-- **Uso:** 0%
-- **Total:** ? GB
-- **Status:** ✅ OK
-
-## Disco C:
-- **Uso:** 0%
-- **Livre:** ? GB
-- **Status:** ✅ OK
-
-## Rede
-- **Conectividade:** ✅ OK
-
-## Alertas
-Nenhum alerta — sistema saudável
+## Notas
+- Script `monitor_sistema.py` tem bug de parsing com vírgula decimal (locale BR). Valores de RAM/disco do script não são confiáveis.
+- Valores reais obtidos via PowerShell direto.
+- Nenhum alerta crítico. Sistema saudável.

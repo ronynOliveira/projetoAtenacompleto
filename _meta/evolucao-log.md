@@ -314,3 +314,47 @@ Nenhuma melhoria de segurança implementada automaticamente.
 Pendências continuam: GITHUB_TOKEN, Telegram, FAL_KEY, Google OAuth.
 - Bug monitor_sistema.py (vírgula pt-BR) ainda não corrigido.
 ```
+
+## [2026-06-05 08:32:14] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Excelente pergunta, focada em pontos cruciais de segurança. Olhando para o cenário de 2026, a automação e a inteligência dos agentes exigem uma abordagem de segurança em camadas.
+
+Aqui estão as 5 melhores práticas de segurança para um agente de IA em Windows, com foco nas áreas que você mencionou:
+
+---
+
+### 1. **Princípio do Menor Privilégio (PoLP) com Contas de Serviço Dedicadas**
+
+Esta é a prática mais fundamental e impacta diretamente as **permissões de arquivos**.
+
+*   **O quê:** Execute o a
+```
+
+## [2026-06-05 08:33:02] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com certeza. Com base nas tendências atuais e na sua necessidade de ferramentas que rodam localmente no Windows, de forma gratuita ou open-source, as 3 categorias de ferramentas de IA mais úteis para um assistente pessoal em 2026 são:
+
+### 1. Corredor de Modelos de Linguagem Local (Ex: Ollama)
+
+*   
+
+Análise:
+
+```
+
+## [2026-06-05 08:34:59] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com certeza! Com base no cenário de 2026 e nos seus critérios de ferramentas gratuitas, open-source e que rodam localmente no Windows, estas são as 3 categorias de ferramentas de IA mais úteis para um assistente pessoal:
+
+### 1. Modelos de Linguagem Locais (LLMs) com Ollama
+
+*   **O que é:** **Ollam
+
+Análise:
+
+```
