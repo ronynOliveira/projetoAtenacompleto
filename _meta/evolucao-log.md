@@ -164,41 +164,211 @@ Análise:
 
 ```
 
-## [2026-06-05] Diagnóstico Manual - Motor de Evolução (Cron)
-⚠️ Motor não executou automaticamente — diagnose manual via terminal().
+## [2026-05-27 10:03:38] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com base nas tendências atuais e projetando para 2026, as 3 ferramentas de IA de código aberto mais úteis para um assistente pessoal rodando localmente no Windows seriam:
 
-### Estado das Ferramentas
-- ✅ Gemini CLI: disponível (rate limit no modelo pro, flash funciona)
-- ✅ Opencode: disponível em PATH
-- ✅ Freebuff: disponível em PATH
-- ⚠️ Python venv: corrompido (pyvenv.cfg ausente)
-- ✅ Python sistema: disponível em AppData/Local/Programs/Python/Python311/
+1.  **Ollama:** Pense no Ollama como o "motor" para a IA. É uma ferramenta que facilita o download, gerenciamento e execução dos
 
-### Problema Identificado
-O motor_evolucao.py timeouta (>60s) quando executado diretamente porque:
-1. subprocess.run com shell=True não herda PATH completo (npm global não encontrado)
-2. Gemini CLI com modelo pro retorna 429 (rate limit)
-3. Opencode e freebuff dependem de API calls com latência alta
+Análise:
 
-### Pesquisa Gemini (flash) - Segurança
-3 principais vulnerabilidades identificadas:
-1. Tokens de API expostos em arquivos de configuração texto-simples
-2. Permissões de arquivo inadequadas (acesso amplo para "Todos")
-3. Isolamento de processos insuficiente (risco de escalada)
+```
 
-### Diagnóstico de Segurança do Sistema
-- ✅ Config.yaml: sem tokens hardcoded (usa api_key_env para GOOGLE_API_KEY e OPENROUTER_API_KEY)
-- ⚠️ SSH id_ed25519: é chave PÚBLICA (98 bytes), não privada — sem risco de exposição
-- ✅ Disco: 409G livres (57%) em C:, 388G livres (59%) em G:
-- ✅ Gateway: rodando (PID 28708)
-- ⚠️ security_watchdog.py: ERRO — ModuleNotFoundError: lib.memory_pipeline
-- ⚠️ key-checkin-1h: delivery falhou (telegram não configurado)
-- ✅ 30 skills instaladas
-- ✅ 24 cron jobs ativos
+## [2026-05-27 10:05:30] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Com certeza. Com base nas tendências atuais e projetando para 2026, aqui estão as 5 melhores práticas de segurança para um agente de IA rodando em um ambiente Windows, com foco nas áreas que você mencionou.
 
-### Ações Recomendadas
-1. Corrigir security_watchdog.py — módulo lib.memory_pipeline não encontrado
-2. Corrigir venv Python (pyvenv.cfg ausente)
-3. Atualizar motor_evolucao.py para usar PATH completo e modelo flash
-4. Configurar telegram para delivery do key-checkin
+---
 
+### As 5 Melhores Práticas de Segurança para Agentes de IA em Windows (2026)
+
+Estas práticas visam mitigar os riscos associados a um agente autônomo que pode acessar arquivos, executar comandos e interagir com APIs.
+
+#### 1. **Princípio do Menor Privilégio (PoLP) para Arquivos e Process
+```
+
+## [2026-05-27 10:08:00] Diagnóstico automático (Cron)
+✅ Sucesso
+```
+MOTOR DE EVOLUÇÃO — Relatório de Execução Automática (Cron Job)
+
+Data: 2026-05-27 10:08
+Trigger: Cron job periódico do OWL
+
+### Diagnóstico do Sistema
+
+| Item | Status | Detalhes |
+|------|--------|----------|
+| Gateway Hermes | ✅ RODANDO | PID 25040, Scheduled Task registrada |
+| Ollama | ⛔ OFFLINE | API não responde na porta 11434 |
+| CPU | ✅ 45% | Dentro do normal |
+| RAM | ⚠️ Erro de parsing | Formato pt-BR (vírgula) no monitor_sistema.py |
+| Disco | ⚠️ Erro de parsing | Formato pt-BR (vírgula) no monitor_sistema.py |
+| Rede | ✅ OK | Conectividade confirmada |
+
+### Monitor de Sistema — Bug Conhecido
+O script monitor_sistema.py falha ao parsear valores de RAM e disco porque o
+Windows retorna números com vírgula decimal (ex: "87,6") enquanto o script espera
+ponto ("87.6"). Bug já identificado anteriormente mas não corrigido.
+Impacto: valores aparecem como 0% mas o sistema continua funcional.
+
+### Motor Principal
+O motor_evolucao.py executou com sucesso às 10:03 de hoje.
+As ferramentas Gemini CLI e Opencode responderam corretamente.
+Total de 4 entradas adicionadas ao log hoje (10:03-10:06).
+
+### Novas Skills ou Melhorias Implementadas
+Nenhuma nova skill foi criada nesta execução.
+Nenhuma melhoria de segurança foi implementada automaticamente.
+O motor gera pesquisa e análise, mas a implementação requer autorização.
+
+### Recomendações Pendentes (desde 20/05)
+1. GITHUB_TOKEN — ainda não configurado
+2. Telegram Bot — ainda não configurado
+3. Composio MCP API key — ainda não obtida
+4. Locale pt-BR no monitor_sistema.py — bug conhecido
+
+### Status Geral
+🟡 Parcialmente operacional — Gateway funciona, Ollama offline,
+motor de evolução pesquisa mas não implementa sem autorização do Arquiteto.
+```
+
+## [2026-05-28 10:14:43] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Com certeza. Com base no cenário de 2026, a segurança de agentes de IA em ambientes como o Windows depende de uma abordagem de "defesa em profundidade". Aqui estão as 5 melhores práticas, com foco nos pontos que você mencionou:
+
+### As 5 Melhores Práticas de Segurança para Agentes de IA em Windows
+
+---
+
+#### 1. **Princípio do Menor Privilégio (PoLP) para Arquivos e Diretórios**
+
+Esta é a base da segurança. O agente de IA deve operar com o mínimo de permissões necessárias para executar suas taref
+```
+
+## [2026-05-28 10:15:25] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com base nas tendências atuais e na sua necessidade de ferramentas gratuitas, open-source e que rodem localmente no Windows, estas são as 3 categorias e ferramentas de IA mais úteis para um assistente pessoal em 2026:
+
+### 1. **LLMs Locais (O Cérebro da IA): Ollama**
+
+*   **O que é:** É uma platafor
+
+Análise:
+
+```
+
+## [2026-06-01 08:09:08] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Com base nas tendências atuais e projeções de segurança, aqui estão as 5 melhores práticas de segurança para um agente de IA rodando em Windows em 2026, com foco nos seus pontos de interesse.
+
+### 1. Isolamento Robusto de Processos (Process Isolation)
+
+Esta é a defesa mais crucial. Um agente comprometido não deve conseguir afetar o sistema hospedeiro.
+
+*   **O quê:** Execute o agente de IA dentro de um ambiente de sandbox que virtualiza o acesso ao sistema operacional, hardware e rede.
+*   **Por
+```
+
+## [2026-06-01 08:10:13] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Excelente pergunta! Pensando no cenário de 2026, onde a maturidade e a otimização das ferramentas locais serão ainda maiores, estas seriam as 3 ferramentas de IA open-source mais úteis para um assistente pessoal rodando localmente no Windows:
+
+### 1. Ollama (O Cérebro do Assistente)
+
+**O que é:** Ol
+
+Análise:
+
+```
+
+## [2026-06-02 17:35:00] Diagnóstico Manual — Cron Auto-Evolução
+✅ Sucesso (diagnóstico direto, motor_evolucao.py bloqueado por approval)
+```
+MOTOR DE EVOLUÇÃO — Diagnóstico Manual 2026-06-02 17:35
+
+### Sistema
+- Ollama: ✅ ONLINE (7 modelos, ~37GB total) — relatório anterior dizia OFFLINE
+- RAM livre: 2.81 GB (~82% usado) — monitor mostra 0% por bug pt-BR vírgula decimal
+- CPU: 77% — normal
+- Rede: ✅ OK
+- Wiki: 30 páginas, 150 skills
+
+### Cron Jobs com Erro (4 novos)
+1. koldi-security-watchdog → ModuleNotFoundError: lib.memory_pipeline
+2. Hermes Auto-Update → Script not found: auto_update.py
+3. koldi-g-backup-auto → Script not found: tools/backup_automatico.py
+4. atena-monitor-distonia → qwen3-4b context 32K < 64K mínimo
+
+### Nenhuma nova skill criada.
+Nenhuma melhoria de segurança implementada automaticamente.
+Pendências continuam: GITHUB_TOKEN, Telegram, FAL_KEY, Google OAuth.
+- Bug monitor_sistema.py (vírgula pt-BR) ainda não corrigido.
+```
+
+## [2026-06-05 08:32:14] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Excelente pergunta, focada em pontos cruciais de segurança. Olhando para o cenário de 2026, a automação e a inteligência dos agentes exigem uma abordagem de segurança em camadas.
+
+Aqui estão as 5 melhores práticas de segurança para um agente de IA em Windows, com foco nas áreas que você mencionou:
+
+---
+
+### 1. **Princípio do Menor Privilégio (PoLP) com Contas de Serviço Dedicadas**
+
+Esta é a prática mais fundamental e impacta diretamente as **permissões de arquivos**.
+
+*   **O quê:** Execute o a
+```
+
+## [2026-06-05 08:33:02] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com certeza. Com base nas tendências atuais e na sua necessidade de ferramentas que rodam localmente no Windows, de forma gratuita ou open-source, as 3 categorias de ferramentas de IA mais úteis para um assistente pessoal em 2026 são:
+
+### 1. Corredor de Modelos de Linguagem Local (Ex: Ollama)
+
+*   
+
+Análise:
+
+```
+
+## [2026-06-05 08:34:59] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com certeza! Com base no cenário de 2026 e nos seus critérios de ferramentas gratuitas, open-source e que rodam localmente no Windows, estas são as 3 categorias de ferramentas de IA mais úteis para um assistente pessoal:
+
+### 1. Modelos de Linguagem Locais (LLMs) com Ollama
+
+*   **O que é:** **Ollam
+
+Análise:
+
+```
+
+## [2026-06-10 07:31:10] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com certeza. Com base nas tendências atuais e na sua preferência por ferramentas locais e de código aberto, aqui estão as 3 ferramentas de IA mais úteis para um assistente pessoal em 2026, rodando em um ambiente Windows:
+
+### 1. Ollama (Executor de LLMs Locais)
+
+*   **O que é:** Uma plataforma que f
+
+Análise:
+
+```

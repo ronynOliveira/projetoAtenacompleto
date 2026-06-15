@@ -1,97 +1,110 @@
 ---
-title: Monitor Distonia — 2026-05-20 09:57:35
-created: 2026-05-20 09:57:35
-updated: 2026-05-20 09:57:35
+title: Monitor Distonia — 2026-06-09 20:52:00
+created: 2026-06-02 17:45:43
+updated: 2026-06-09 20:52:00
 type: query
 tags: [distonia, saude, monitoramento, pesquisa]
 ---
 
-# Monitor de Distonia Generalizada — 2026-05-20 09:57:35
+# Monitor de Distonia Generalizada — 2026-06-09 20:52:00
 
 ## Resumo
-- **Termos pesquisados:** 7
-- **Resultados encontrados:** 7
-- **Data:** 2026-05-20 09:57:35
+- **Pesquisa PubMed realizada:** 9/6/2026
+- **Artigos analisados:** 15+
+- **Período coberto:** Jan 2026 – Jun 2026
+- **Status:** NOVIDADES SIGNIFICATIVAS ENCONTRADAS
 
-## Novidades Encontradas
+---
 
-### distonia generalizada tratamento 2026
-**Fonte:** cache
+## 🔬 Novidades Encontradas (Junho 2026)
 
-## Resumo: Tratamento da Distonia Generalizada (2026)
+### 1. NOVOS GENES ASSOCIADOS À DISTONIA GENERALIZADA
 
-**O que é:** Distúrbio do movimento com contrações musculares involuntárias e sustentadas que afetam múltiplas regiões do corpo (tronco + 2 ou mais segmentos). Pode ser de origem genética (mais comum na infância) ou adquirida (lesões cerebrais, AVC, paralisia cerebral, infecções, medicamentos).
+**CHD8 — Nova causa de distonia generalizada de início adulto** (PMID: 42237036, Jun 2026)
+- O gene CHD8 (remodelador de cromatina) foi associado a distonia progressiva de início adulto em duas pacientes não-relacionadas
+- Antes só associado a autismo e macrocefalia
+- Importante porque abre caminho para terapias direcionadas ao mecanismo epigenético
+- **Relevância:** Média — descoberta genética expande possibilidades futuras de tratamento
 
-### Principais opções de tratamento:
+**VPS16 — Nova causa genética identificada** (PMID: 42233462, Jun 2026)
+- Mulher de 69 anos com início aos 18 anos: distonia cervical → oromandibular → generalizada
+- Artigo reforça que teste genético é crucial para prever resposta à DBS
+- **Relevância:** Média — diagnóstico genético pode orientar escolha terapêutica
 
-1. **Medicamentos orais**
-   - Anticolinérgicos (trihexifenidil), baclofeno, benzodiazepínicos e tetrabenazina
+---
 
-### dystonia generalized research 2025 2026
-**Fonte:** cache
+### 2. AVANÇOS EM CIRURGIA (DBS e PALIDOTOMIA)
 
-## Resumo das Pesquisas sobre Distonia Generalizada (2025-2026)
+**DBS palidal vs. Palidotomia para distonia pós-anóxia** (PMID: 41763133, Mai 2026)
+- Primeiro estudo comparativo entre DBS-GPi e palidotomia bilateral para distonia generalizada pós-anóxica
+- DBS é o padrão-ouro, mas eficácia na distonia adquirida é menos estabelecida
+- Palidotomia pode ser alternativa viável em locais com recursos limitados
+- **Relevância:** ALTA — distonia pós-anóxica é grave e sem boas opções; palidotomia como alternativa é informação valiosa para casos refratários
 
-### 🧬 Genética e Mecanismos Moleculares
-- **Novos genes identificados**: Mutações em *KMT2B*, *VPS16*, *EIF2AK2*, *PRKRA*, *AOPEP* e *PRMT1* foram confirmadas como causadoras, com vias moleculares envolvendo biossíntese de dopamina, tráfego de vesículas sinápticas e sinalização de cálcio.
-- **Maior estudo de sequenciamento de exoma** (1.924 pacientes): Rendimento diagnóstico de 8,1%, sendo **56,2% das variantes novas**. Distonia ge
+**DBS do Núcleo Subtalâmico (STN-DBS) para Distonia Generalizada Isolada** (PMID: 42123079, Mai 2026)
+- 12 pacientes com IGD tratados com STN-DBS bilateral (2016-2021)
+- Análise com Lead-DBS V3.0 mostrou correlação entre posição do eletrodo e eficácia clínica
+- Resultados BFMDRS melhoraram significativamente
+- **Relevância:** ALTA — STN pode ser alvo alternativo ao GPi para DBS na distonia generalizada; precisão do eletrodo é fator crítico
 
-### distonia DBS estimulação cerebral profunda novidades
-**Fonte:** cache
+**Palidotomia bilateral para DYT-28 (KMT2B) em criança** (PMID: 42176000, Mai 2026)
+- DYT-28 é causa genética de distonia generalizada precoce
+- Palidotomia como alternativa quando DBS não é viável (custo, acesso, hardware em crianças)
+- **Relevância:** Média — alternativa cirúrgica para contextos com recursos limitados
 
-## Resumo: Novidades sobre DBS (Estimulação Cerebral Profunda) para Distonia
+**DBS simultâneo (GPi + Núcleo Centromediano) para distonia + epilepsia** (PMID: 42024243, Abr 2026)
+- Caso técnico: criança com encefalopia hipóxico-isquêmica com distonia + epilepsia
+- DBS de GPi (distonia) + CMN (epilepsia, baseado no trial ESTEL para Lennox-Gastaut)
+- **Relevância:** ALTA — abordagem dual inovadora para comorbidades neurológicas graves
 
-### 1. Aprovação histórica da FDA (Dez/2025)
-A **Medtronic** recebeu aprovação da FDA para ampliar o rótulo clínico do DBS para distonia, saindo do status de "Humanitarian Device Exemption" para **rotulagem completa baseada em evidências**. É o primeiro e único sistema aprovado nos EUA para tratar sintomas de distonia primária (generalizada, segmental e cervical) em adultos e pacientes a partir de 12 anos.
+---
 
-### 2. STN-
+### 3. PESQUISA BÁSICA — NOVAS VIAS TERAPÊUTICas
 
-### distonia toxina botulínica avanços
-**Fonte:** cache
+**Modulação de cAMP estriatal via ADCY5** (PMID: 41660259, Fev 2026, iScience)
+- Via de sinalização cAMP no estriado é chave para distúrbios hipercinéticos
+- ADCY5 (adenilato ciclase 5) — variantes patogênicas causam MxMD-ADCY5 (distúrbios mistos do movimento)
+- Estudo translacional humanos + camundongos
+- **Relevância:** ALTA — abre caminho para drogas que modulem cAMP estriatal como nova classe terapêutica para distonia e distúrbios relacionados
 
-## Avanços Recentes em Toxina Botulínica para Distonia
+---
 
-**1. Equivalência entre métodos de guiamento (2025)**
-Estudo randomizado brasileiro demonstrou que injeções guiadas por **ultrassom (US)** e **eletromiografia (EMG)** têm eficácia equivalente na distonia cervical, com redução de ~23% na escala TWSTRS em ambos os grupos. O ultrassom mostrou vantagem adicional para visualizar músculos profundos (oblíquo inferior da cabeça, semiespinal), que não foram acessíveis com EMG.
+### 4. TOXINA BOTULÍNICA — USO OFF-LABEL
 
-**2. Combinação com E
+**Scoping Review: Toxina botulínica intramuscular cabeça/pescoço** (PMID: 42233884, Jun 2026)
+- Revisão abrangente do uso off-label de BTX em distonias craniofaciais
+- **Relevância:** Média — confirma práticas clínicas existentes
 
-### distonia terapia gênica pesquisa clínica
-**Fonte:** cache
+**Fatores que influenciam resposta à BXT na distonia cervical** (PMID: 41575590, Jan 2026)
+- Estudo multicêntrico baseado em GAS (Goal Attainment Scaling)
+- Identifica preditores de boa resposta à toxina botulínica
+- **Relevância:** Média-Alta — ajuda a personalizar tratamento com BTX
 
-## Resumo: Distonia e Terapia Gênica — Pesquisa Clínica
+---
 
-### Estado Atual da Pesquisa
-A terapia gênica para distonia ainda está em **fase pré-clínica e de estágios iniciais de desenvolvimento**. Não há atualmente terapias gênicas aprovadas para uso clínico em distonia, mas há avanços promissores:
+### 5. DISTONIA INDUZIDA POR MEDICAMENTOS (CRIANÇAS)
 
-### Achados Principais
+**Distonia aguda induzida por drogas em crianças** (PMID: 42057551, Abr 2026)
+- Fatores de risco, características clínicas e manejo de emergência
+- **Relevância:** Média — importante para diagnóstico diferencial
 
-**1. Abordagens em estudo:**
-- **Silenciamento gênico (RNAi):** Pesquisas focam em silenciar o gene mutante *TOR1A* (DYT1) usando vetores virais AAV em modelos animais, com melh
+---
 
-### VIM0423 dystonia trial results
-**Fonte:** cache
+## Resumo das Novidades Mais Importantes para o Arquiteto
 
-## Resumo dos Resultados do Estudo VIM0423 para Distonia
+| Área | Novidade | Relevância |
+|------|----------|------------|
+| Genética | CHD8 e VPS16 como novas causas de distonia | Média (futuro) |
+| Cirurgia | STN-DBS eficaz para distonia generalizada isolada | **Alta** |
+| Cirurgia | DBS dual (GPi+CMN) para distonia+epilepsia | **Alta** |
+| Cirurgia | Palidotomia alternativa para DYT-28 e pós-anóxia | **Alta** |
+| Farmacologia | Via cAMP/ADCY5 como novo alvo terapêutico | **Alta** |
+| BTX | Preditores de resposta à toxina botulínica | Média-Alta |
 
-**Status atual:** Os resultados de eficácia da Fase 2 **ainda não foram publicados**. O estudo (chamado "Stride Dystonia") está em andamento, com previsão de resultados no **primeiro semestre de 2027**.
-
-### Achados mais importantes até agora:
-
-**Fase 1 (concluída):**
-- VIM0423 apresentou **perfil de segurança favorável** e foi bem tolerado em doses únicas e múltiplas por 28 dias
-- Efeitos colaterais foram leves (dor de cabeça, desconfort
-
-### distonia qualidade de vida exercícios
-**Fonte:** cache
-
-## Resumo: Distonia, Qualidade de Vida e Exercícios
-
-### O que é Distonia
-Distonia é um distúrbio neurológico caracterizado por contrações musculares involuntárias e sustentadas, que causam posturas anormais, movimentos repetitivos e dor. Pode ser **focal** (afetando uma parte do corpo, como pescoço, mão ou pálpebras) ou **generalizada**. Não tem cura, mas os sintomas podem ser controlados.
-
-### Impacto na Qualidade de Vida
-- Dor muscular crônica, fadiga e dificuldade para tarefas simples (escre
+## Comparação com Relatório Anterior (02/06/2026)
+- Relatório anterior cobria: Daxxify (duração prolongada), VIM0423 (fase 1), exercícios
+- Este relatório cobre avanços cirúrgicos e genéticos **novos**
+- Nenhum conflito — são áreas complementares
 
 ## Próxima Verificação
 Automática via cron job (semanal).

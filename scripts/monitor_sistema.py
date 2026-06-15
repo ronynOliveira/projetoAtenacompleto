@@ -12,11 +12,30 @@ import subprocess
 import sys
 import os
 import json
+import locale
 import logging
 from datetime import datetime
 
+# Forçar locale numérico para usar ponto como separador decimal,
+# independentemente da configuração regional do Windows.
+try:
+    locale.setlocale(locale.LC_NUMERIC, 'C')
+except locale.Error:
+    pass
+
 logging.basicConfig(level=logging.WARNING, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
+
+
+def parse_num(texto):
+    """Converte string de número do PowerShell para float,
+    tratando vírgula como separador decimal (pt-BR)."""
+    if not texto:
+        return 0.0
+    # Remove espaços e troca vírgula por ponto
+    texto = texto.strip().replace(',', '.')
+    return float(texto)
+
 
 WIKI_PATH = os.path.join(os.path.expanduser("~"), "wiki")
 REPORT_PATH = os.path.join(WIKI_PATH, "_meta", "monitor-sistema.md")
@@ -40,7 +59,7 @@ def run_ps(cmd):
 def verificar_cpu():
     """Verifica uso de CPU."""
     try:
-        cpu = float(run_ps("(Get-CimInstance Win32_Processor | Measure-Object -Property LoadPercentage -Average).Average"))
+        cpu = parse_num(run_ps("(Get-CimInstance Win32_Processor | Measure-Object -Property LoadPercentage -Average).Average"))
         status = "ok" if cpu < LIMIARES["cpu_pct"] else "critico"
         return {"valor": cpu, "status": status, "unidade": "%"}
     except (ValueError, subprocess.TimeoutExpired, Exception) as e:
@@ -51,9 +70,9 @@ def verificar_cpu():
 def verificar_ram():
     """Verifica uso de RAM."""
     try:
-        ram = float(run_ps("$os = Get-CimInstance Win32_OperatingSystem; [math]::Round(($os.TotalVisibleMemorySize - $os.FreePhysicalMemory) / $os.TotalVisibleMemorySize * 100, 1)"))
+        ram = parse_num(run_ps("$os = Get-CimInstance Win32_OperatingSystem; [math]::Round(($os.TotalVisibleMemorySize - $os.FreePhysicalMemory) / $os.TotalVisibleMemorySize * 100, 1)"))
         status = "ok" if ram < LIMIARES["ram_pct"] else "critico"
-        total_gb = float(run_ps("[math]::Round((Get-CimInstance Win32_OperatingSystem).TotalVisibleMemorySize / 1MB, 1)"))
+        total_gb = parse_num(run_ps("[math]::Round((Get-CimInstance Win32_OperatingSystem).TotalVisibleMemorySize / 1MB, 1)"))
         return {"valor": ram, "status": status, "unidade": "%", "total_gb": total_gb}
     except (ValueError, subprocess.TimeoutExpired, Exception) as e:
         logger.warning("Erro ao verificar RAM: %s", e)
@@ -63,9 +82,9 @@ def verificar_ram():
 def verificar_disco():
     """Verifica uso do disco C:."""
     try:
-        disco = float(run_ps("$d = Get-CimInstance Win32_LogicalDisk -Filter \"DeviceID='C:'\"; [math]::Round(($d.Size - $d.FreeSpace) / $d.Size * 100, 1)"))
+        disco = parse_num(run_ps("$d = Get-CimInstance Win32_LogicalDisk -Filter \"DeviceID='C:'\"; [math]::Round(($d.Size - $d.FreeSpace) / $d.Size * 100, 1)"))
         status = "ok" if disco < LIMIARES["disco_pct"] else "critico"
-        livre_gb = float(run_ps("$d = Get-CimInstance Win32_LogicalDisk -Filter \"DeviceID='C:'\"; [math]::Round($d.FreeSpace / 1GB, 1)"))
+        livre_gb = parse_num(run_ps("$d = Get-CimInstance Win32_LogicalDisk -Filter \"DeviceID='C:'\"; [math]::Round($d.FreeSpace / 1GB, 1)"))
         return {"valor": disco, "status": status, "unidade": "%", "livre_gb": livre_gb}
     except (ValueError, subprocess.TimeoutExpired, Exception) as e:
         logger.warning("Erro ao verificar disco: %s", e)
