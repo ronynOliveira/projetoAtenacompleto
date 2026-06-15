@@ -8,7 +8,7 @@
 
 ### 1. HMAC Secret Mismatch
 - **Problema:** Servidor usava secret default (`default-insecure-koldi-secret-key-change-me`) porque `EPR_SECRET` não estava setado no systemd
-- **Solução:** Adicionado `Environment=EPR_SECRET=epr-bridge-2026-secret-key-koldi-secret-key-koldi-fusion` no systemd service
+- **Solução:** Adicionado `EPR_SECRET` (armazenado no cofre) no systemd service
 - **Resultado:** HMAC signature validada corretamente
 
 ### 2. Sync Paths Duplicados
