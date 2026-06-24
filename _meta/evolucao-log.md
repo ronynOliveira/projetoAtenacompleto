@@ -372,3 +372,76 @@ Com certeza. Com base nas tendências atuais e na sua preferência por ferrament
 Análise:
 
 ```
+
+## [2026-06-12 00:20:13] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Excelente pergunta. A segurança de um agente de IA, especialmente um com acesso a ferramentas e ao sistema de arquivos como o seu, é fundamental. Focando no Windows em 2026 e nos pontos que você mencionou, aqui estão as 5 melhores práticas de segurança, em ordem de prioridade:
+
+### 1. **Princípio do Menor Privilégio (File Permissions)**
+
+Esta é a base de toda a segurança. O agente só deve ter as permissões estritamente necessárias para operar.
+
+*   **Por quê:** Se o agente for comprometido (por 
+```
+
+## [2026-06-12 00:20:43] Pesquisa segurança (Gemini)
+✅ Sucesso
+```
+Com certeza. Com base no seu pedido, aqui estão as 5 melhores práticas de segurança para um agente de IA rodando em Windows em 2026, com foco nos seus pontos de interesse.
+
+### As 5 Melhores Práticas de Segurança para Agentes de IA em Windows (2026)
+
+Estas práticas visam proteger tanto a integridade do agente quanto a segurança do sistema operacional hospedeiro, aplicando o princípio de defesa em profundidade.
+
+---
+
+#### 1. **Isolamento Robusto do Processo (Process Isolation)**
+
+Esta é a medida 
+```
+
+## [2026-06-12 00:21:10] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com base nas tendências atuais e projetando para 2026, as ferramentas de IA mais úteis para um assistente pessoal rodando localmente no Windows, com foco em software livre, se enquadram em três categorias principais:
+
+### 1. Cérebro de IA Local (Gestor de Modelos de Linguagem)
+
+*   **Ferramentas de 
+
+Análise:
+
+```
+
+## [2026-06-12 00:21:38] Evolução unificada (3 ferramentas)
+✅ Sucesso
+```
+Pesquisa:
+Com base nas tendências atuais e na sua lista de ferramentas, que demonstra um claro interesse em automação e IA local, as 3 ferramentas de IA open-source mais úteis para um assistente pessoal rodando localmente no Windows em 2026 seriam:
+
+### 1. Ollama: O Cérebro da Operação (Servidor de LLM Local)
+
+Análise:
+
+```
+
+## [2026-06-23 08:43:14] Análise skills (OpnCode)
+✅ Sucesso
+```
+
+```
+
+## [2026-06-23 08:58:00] Diagnóstico Auto-Evolução (Cron)
+⚠️ Motor timeout (300s) — Ollama sem resposta
+- OpnCode stage 2: saída vazia (comportamento esperado em cron)
+- Ollama processo não responha a `ollama list` nem API
+- Gateway não responde na porta 18080
+- Disco: 374GB livres / 933GB (60%)
+- Última evolução bem-sucedida: 2026-06-12 (Gemini + unified 3-tools)
+- Nenhuma skill criada ou melhorada nesta execução
+- Ação recomendada: reiniciar Ollama (`ollama serve`)
+
+## [2026-06-23 11:15:40] Evolução unificada (3 ferramentas)
+❌ Erro: 

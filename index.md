@@ -88,7 +88,6 @@ wiki/
 
 | Página | Descrição |
 |---|---|
-| [[ponte-koldi-local-cloud-2026-06-10]] | **Plano de ponte Koldi Local ↔ Koldi Nuvem (VPS)** — 5 camadas |
 | [[analise-update-hermes-0.15.1-2026-06-04]] | Análise do update 0.15.1 (126 commits) |
 | [[teorias-psicologicas-identidade-ia]] | 9 teorias psicológicas aplicadas a agentes de IA |
 | [[conversa-koldi-gemini]] | Conversa com Gemini — Como ser um assistente melhor |
