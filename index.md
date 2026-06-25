@@ -9,7 +9,7 @@ tags: [index, navegacao]
 # Atena Wiki — Índice
 
 Memória expandida do Projeto Atena. Consulte estas páginas para contexto, habilidades e conhecimento acumulado.
-Última atualização: 2026-06-04 | Total: 104 páginas
+Última atualização: 2026-06-25 | Total: 105+ páginas
 
 ## 🗺️ Mapa da Wiki
 
@@ -23,7 +23,10 @@ wiki/
 └── raw/            Artigos externos (Karpathy, etc.)
 ```
 
-## 🧭 Navegação Rápida
+## 📅 Sessões Recentes
+
+- **2026-06-25**: [[sessao-2026-06-25-fusao-atena-koldi]] — Fusão Koldi+Atena, interface holográfica, otimização CPU
+- **2026-06-24**: Interface holográfica cyberpunk, Agent Loop, Identity Engine
 
 - **Entender o projeto**: [[cidade-anomala]] → [[projeto-atena]] → [[projetos-pendentes]]
 - **Identidade do Koldi**: [[koldi-soul]] → [[koldi-hermes]] → [[identity-framework]] → [[gnostico-construtor]]
