@@ -445,3 +445,29 @@ Análise:
 
 ## [2026-06-23 11:15:40] Evolução unificada (3 ferramentas)
 ❌ Erro: 
+
+## [2026-06-24 08:00:00] Diagnóstico Auto-Evolução (Cron)
+⚠️ Motor timeout (300s) — comportamento esperado em contexto cron
+- Stage 1 (Gemini): ❌ Gemini CLI retornou IneligibleTierError (free tier descontinuado)
+- Stage 2 (Opencode): ❌ Timeout (processo não responde)
+- Stage 3 (freebuff): ❌ Não executado (stage 2 falhou)
+- Ollama: ✅ ONLINE (7 modelos, API responde)
+- Gateway: ⚠️ Não responde na porta 18080 (timeout)
+- Disco: 374GB livres / 933GB (60%)
+- RAM: ~15.7GB total
+- CPU: i5-1235U
+
+### Problemas Identificados
+1. **Gemini CLI descontinuado** — free tier não suporta mais o CLI (migração para Antigravity)
+2. **Opencode timeout** — processo trava ao verificar versão (possível conflito de PATH)
+3. **Gateway não responde** — porta 18080 timeout (serviço pode estar parado)
+
+### Nenhuma skill criada ou melhorada nesta execução.
+### Última evolução bem-sucedida: 2026-06-12 (Gemini + unified 3-tools)
+
+### Ações Recomendadas
+1. Verificar Gateway: `hermes gateway status` ou reiniciar
+2. Alternativa ao Gemini CLI: usar `delegate_task` com modelo openrouter/owl-alpha
+3. Verificar opencode: `opencode --version` em sessão interativa
+4. Considerar migrar motor para usar `delegate_task` em vez de subprocess
+
