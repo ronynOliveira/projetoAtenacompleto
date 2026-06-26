@@ -471,3 +471,31 @@ Análise:
 3. Verificar opencode: `opencode --version` em sessão interativa
 4. Considerar migrar motor para usar `delegate_task` em vez de subprocess
 
+
+## [2026-06-25 18:00:00] Diagnóstico Auto-Evolução (Cron)
+⚠️ Motor não produziu output (saída vazia após 180s)
+- Stage 1 (Gemini): ❌ Não executado (motor não completou)
+- Stage 2 (Opencode): ❌ Não executado
+- Stage 3 (freebuff): ❌ Não executado
+- Ollama: ✅ ONLINE (10 modelos: atena-glm5, phi4-mini, deepseek-r1:8b, gemma4, hermes3:8b, qwen3:8b, nomic-embed-text, sam860/phi4-mini, gemma4:e4b, gemma4:e2b)
+- Gateway: ⚠️ Processo existe (hermes.exe PID 21852) mas porta 18080 NÃO responde — estado zumbi
+- Disco: 368GB livres / 933GB (61%)
+- RAM: ~15.7GB total
+- CPU: i5-1235U
+- Skills: 31 categorias
+- Tools: 87 scripts
+
+### Problemas Identificados
+1. **Gateway zumbi** — Processo hermes.exe rodando mas sem portas abertas. Serviço HTTP não funcional.
+2. **Motor travou** — Saída vazia em 180s (possível bloqueio em subprocess ou I/O)
+3. **Gemini CLI descontinuado** — Não funcional desde 24/06/2026
+4. **Opencode timeout** — Trava em subprocess (conhecido desde 24/06)
+
+### Nenhuma skill criada ou melhoria nesta execução.
+### Última evolução bem-sucedida: 2026-06-12 (Gemini + unified 3-tools)
+
+### Ações Recomendadas
+1. Reiniciar Gateway em sessão interativa (matar PID 21852 e reiniciar)
+2. Migrar motor para delegate_task (subagentes paralelos) — mais confiável que subprocess
+3. Substituir Gemini CLI por delegate_task com openrouter/owl-alpha
+4. Verificar por que motor_evolucao.py retorna saída vazia (possível exceção silenciosa)
